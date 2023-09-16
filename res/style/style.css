@@ -13,8 +13,31 @@
 }
 .header__frame {
   display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  margin-right: 10%;
+}
+.header__nav-block {
+  display: flex;
+  min-width: 55%;
 }
 
+.txt {
+  color: #a1a6b4;
+  font-family: Muller;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.txt--light {
+  color: white;
+}
+.txt--bold {
+  font-size: 20px;
+  font-weight: 500;
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -27,12 +50,63 @@
   margin: 0;
   padding: 0;
 }
+.header__nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.nav__link {
+  text-wrap: nowrap;
+}
+.header__search-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 1.1rem 2.7rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px solid #121723;
+
+  font-family: Muller;
+
+  font-style: normal;
+
+  line-height: normal;
+}
+
+.btn--solid {
+  border: 2px solid #6d31ee;
+  background: #6d31ee;
+  text-align: center;
+
+  font-size: 20px;
+
+  font-weight: 500;
+  color: white;
+}
 
 /* hero */
 
 .hero__title {
   margin: 0;
   padding: 0;
+
+  font-family: Muller;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.hero__text {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Muller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 .section {
   padding: 5em 0;
@@ -45,7 +119,14 @@
   flex: 4;
 }
 .main__backgroud-content-block {
+  background: url(../source/grafic/mic_big.png) no-repeat;
+  background-size: 45%;
+  margin-right: 10px;
+  background-position: center;
   flex: 2;
+
+  padding: 5% 0;
+  margin: -5% 0;
 }
 .heading {
   margin: 0;
@@ -69,8 +150,13 @@
 }
 .card {
   margin: 0 1.5rem 1.5rem 0;
-  padding: 40px 0 40px 150px;
+  padding: 40px 0 40px 16%;
   position: relative;
+
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: left;
 }
 
 /* shows */
@@ -102,17 +188,38 @@
   justify-content: right;
 }
 .card--vertical {
-  padding: 170px 0 1rem 1rem;
+  padding: 17% 0 1rem 1rem;
+
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-position: top;
 }
 .card__absolute-logo {
   position: absolute;
   right: 0;
   top: 0;
+  display: block;
+  width: fit-content;
+}
+.logo--podcast {
+  top: inherit;
+  bottom: 0;
+  left: 0;
+
+  background: #fff;
 }
 .shows__left-part {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+/* guests */
+.guests {
+  background: #121723;
+}
+.heading--lite {
+  color: white;
 }
 .guests__list {
   list-style: none;
@@ -123,7 +230,19 @@
 .guest-card:not(:last-child) {
   margin-bottom: 2.5rem;
 }
-
+.shows__archive-block {
+  min-height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.archive-block__background {
+  background: url(../source/grafic/mic_big.png) no-repeat;
+  background-size: 20%;
+  height: 100%;
+  background-position: bottom left;
+  margin-bottom: 5%;
+}
 /* playlists */
 
 .playlists__frame {
