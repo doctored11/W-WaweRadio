@@ -2,34 +2,48 @@
   box-sizing: border-box;
   border: 2px solid rgba(243, 179, 40, 0.2);
 }
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/Muller/MullerRegular.woff2") format("woff2");
+  font-style: normal;
+}
 
 /* header */
 
 .header {
-  padding: 1.75em 0;
+  padding: 1.7em 0;
 }
 .frame {
-  padding: 0 10%;
+  padding: 0 19.6%;
 }
 .header__frame {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
-  margin-right: 10%;
+  margin-right: 8%;
+  text-wrap: nowrap;
+
+  /* todo сделать не на пикселях*/
+  width: 160px;
+  max-height: 20px;
 }
 .header__nav-block {
   display: flex;
-  min-width: 55%;
+  min-width: 85%;
+  position: relative;
 }
 
 .txt {
   color: #a1a6b4;
-  font-family: Muller;
+  font-family: "Muller";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  padding: 0;
+  margin: 0;
 }
 .txt--light {
   color: white;
@@ -51,28 +65,39 @@
   padding: 0;
 }
 .header__nav {
-  width: 100%;
-  justify-content: space-evenly;
+  width: 65%;
+  min-width: 640px;
+  justify-content: space-between;
 }
 .nav__link {
   text-wrap: nowrap;
+
+  color: #121723;
 }
-.header__search-logo {
+.search-block {
+  height: auto;
+  width: auto;
+  max-height: 25px;
+  max-width: 25px;
+}
+.search-ico {
   width: 100%;
   height: 100%;
 }
 
 .btn {
   display: inline-flex;
-  padding: 1.1rem 2.7rem;
+  padding: 1.4rem 3.3rem;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
   border: 2px solid #121723;
 
-  font-family: Muller;
+  font-family: "Muller";
 
+  font-size: 20px;
   font-style: normal;
+  font-weight: 500;
 
   line-height: normal;
 }
@@ -87,7 +112,11 @@
   font-weight: 500;
   color: white;
 }
-
+.btn--dark {
+  border: 2px solid #aa9dfa;
+  background: transparent;
+  color: #aa9dfa;
+}
 /* hero */
 
 .hero__title {
@@ -99,6 +128,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
+  margin-bottom: 0.6rem;
 }
 .hero__text {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -107,9 +137,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  width: 85%;
+  margin: 0;
+  margin-bottom: 2.6rem;
 }
 .section {
-  padding: 5em 0;
+  padding: 6em 0;
 }
 .main__frame {
   display: flex;
@@ -120,9 +153,9 @@
 }
 .main__backgroud-content-block {
   background: url(../source/grafic/mic_big.png) no-repeat;
-  background-size: 45%;
+  background-size: 58%;
   margin-right: 10px;
-  background-position: center;
+  background-position: 58% bottom;
   flex: 2;
 
   padding: 5% 0;
@@ -132,6 +165,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 1.5rem;
+  font-family: 'Muller';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
 }
 .list {
   width: 100%;
@@ -142,15 +179,19 @@
   padding: 0;
   margin: 0;
 }
+.podcasts-section {
+  background: #e6e8ec;
+}
 .podcast-card {
   width: 45%;
+  background-color: white;
 }
 .section--short {
   padding: 1.2rem 0;
 }
 .card {
   margin: 0 1.5rem 1.5rem 0;
-  padding: 40px 0 40px 16%;
+  padding: 40px 0 40px 12%;
   position: relative;
 
   background-size: auto 100%;
@@ -195,12 +236,31 @@
 
   background-position: top;
 }
+.card-time-txt{
+  margin: 0;
+}
+.card__title{
+  margin: 0;
+}
+.card__description{
+  margin: 0;
+}
 .card__absolute-logo {
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
   display: block;
   width: fit-content;
+  background-size: 100%;
+  background-position: center;
+  z-index: 3;
+}
+.card__absolute-logo--flag {
+  width: 11%;
+  height: 5%;
+
+  border: 3px #121723 solid;
 }
 .logo--podcast {
   top: inherit;
@@ -260,22 +320,40 @@
 .card--playlists {
   width: 22%;
   padding: 175px 0.6rem 0.6rem 0.6rem;
+  background-position: top center;
+  background-size: 100%;
 }
 .card--playlists:nth-child(4n) {
   margin-right: 0;
 }
 /* buy */
+.buy-block {
+  background: #292e39;
+}
 .buy-block__frame {
   display: flex;
   flex-direction: row;
 }
 .buy-block__art-block {
   flex: 7;
+  position: relative;
 }
+.buy-block__art {
+  height: 100%;
+  width: 80%;
+
+  background: url(../source/grafic/Radio.png) no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
 .buy-block__content-block {
   flex: 6;
 }
 /* about */
+.about {
+  background-color: #121723;
+}
 .about__text-content {
   display: flex;
   flex-direction: row;
@@ -287,8 +365,33 @@
   flex: 4;
 }
 .card--about {
+  padding-top: 18rem;
   width: 23%;
 }
 .card--about:last-child {
   margin-right: 0;
+}
+.heading--accent {
+  color: #f0d288;
+  font-size: 48px;
+  font-weight: 400;
+}
+/* footer */
+.footer {
+  background: #292e39;
+}
+.footer__frame {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav {
+  position: relative;
+  max-width: 40%;
+  flex-wrap: wrap;
+}
+.nav__nav-link {
+  width: 32%;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 400;
 }
