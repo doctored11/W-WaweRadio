@@ -1,0 +1,31 @@
+.nav__hyper-txt{
+    position: relative;
+}
+.nav__hyper-txt::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-lite-perple) ;
+    position: absolute;
+    bottom: -4px;
+    transform: scaleY(0);
+    transition: transform .4s;
+}
+
+.nav__hyper-txt:hover::before {
+    transform: scaleY(1);
+    cursor: pointer;
+}
+
+.nav__hyper-txt:hover{
+    color: var(--color-lite-perple);
+}
+.hero__btn:hover{
+    background-color: var( --color-lilitic);
+    border-color: var( --color-lilitic);
+}
+
+.nav__txt:hover{
+    background-color: var(--color-lilitic);
+    color: var(--color-white);
+}

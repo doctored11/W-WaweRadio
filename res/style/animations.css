@@ -1,9 +1,9 @@
 :root {
   --arrow-ani-duration: 1s;
-  --start-w-ani: calc(var(--arrow-ani-duration) * 0.65);
-  --w-ani-duration: calc(var(--arrow-ani-duration) * 0.3);
-  --start-w2-ani: calc((var(--arrow-ani-duration) * 0.75));
-  --w2-ani-duration: calc(var(--arrow-ani-duration) * 2);
+  --start-w-ani: calc(var(--arrow-ani-duration) * 0.53);
+  --w-ani-duration: calc(var(--arrow-ani-duration) * 0.46);
+  --start-w2-ani: calc((var(--arrow-ani-duration) * 0.7));
+  --w2-ani-duration: calc(var(--arrow-ani-duration) * 0.8);
 }
 
 @keyframes moveRight {
@@ -11,18 +11,18 @@
     transform: translateX(0);
     opacity: 1;
   }
-  60% {
+  50% {
     transform: translateX(100%);
     opacity: 1;
   }
-  61% {
+  51% {
     opacity: 0;
   }
-  62% {
+  52% {
     transform: translateX(-60%) scaleX(80%);
     opacity: 0;
   }
-  63% {
+  53% {
     opacity: 1;
   }
 
@@ -50,11 +50,11 @@
     opacity: 0;
   }
 
-  51% {
+  81% {
     transform: translate(0, -100%) scaleY(1);
     opacity: 0;
   }
-  52% {
+  82% {
     opacity: 1;
   }
   100% {
@@ -79,6 +79,25 @@
   100% {
     transform: scaleY(1);
     fill: #292e39;
+  }
+}
+@keyframes growW2L {
+  0% {
+    transform: scaleY(1);
+    transform-origin: center center;
+    fill: white;
+  }
+  10% {
+    transform: scaleY(1.4);
+    fill: #6d31ee;
+  }
+  30% {
+    transform: scaleY(1);
+    fill: #6d31ee;
+  }
+  100% {
+    transform: scaleY(1);
+    fill: white;
   }
 }
 

@@ -24,26 +24,48 @@ function addBackImages(target) {
 ///лого анимат
 
 
-const mainLogo = document.querySelector('.header__logo');
-const arrow = document.getElementById('Arrow');
-const w1 = document.getElementById('W1');
-const w2 = document.getElementById('W2');
 
-function handleAnimationEnd() {
+const logos = document.querySelectorAll('.logo');
+
+function handleAnimationEnd(arrow, w1, w2) {
+    if (!arrow.classList.contains('arrow-active')) {
+        return; 
+    }
+    
     arrow.classList.remove('arrow-active');
-    arrow.removeEventListener('animationend', handleAnimationEnd);
-
     w1.classList.remove('move-w1');
     w2.classList.remove('grow-w2');
 }
 
-mainLogo.addEventListener('mouseenter', () => {
+function applyAnimation(logo, arrow, w1, w2) {
     arrow.classList.add('arrow-active');
-    w2.addEventListener('animationend', handleAnimationEnd);
-
+    
+    arrow.addEventListener('animationend', () => {
+        handleAnimationEnd(arrow, w1, w2);
+    }, { once: true });
     w1.classList.add('move-w1');
     w2.classList.add('grow-w2');
+    w2.addEventListener('animationend', () => {
+        handleAnimationEnd(arrow, w1, w2);
+    }, { once: true });
+    
+   
+}
+
+logos.forEach(logo => {
+    const arrow = logo.querySelector('.Arrow');
+    const w1 = logo.querySelector('.W1');
+    const w2 = logo.querySelector('.W2');
+
+    logo.addEventListener('mouseenter', () => {
+        applyAnimation(logo, arrow, w1, w2);
+    });
 });
+
+
+
+
+
 
 
 //микро аудио анимат кругов

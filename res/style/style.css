@@ -20,7 +20,7 @@
 }
 
 :root {
- --color-black: #121723;
+  --color-black: #121723;
   --color-lite-black: #292e39;
   --color-gray: #a1a6b4;
   --color-lite-gray: #d2d5dd;
@@ -65,6 +65,8 @@
 
   /* todo сделать не на пикселях*/
   width: 160px;
+}
+.logo {
   overflow: hidden;
 }
 .logo__svg-block {
@@ -127,12 +129,17 @@
   min-width: 640px;
   justify-content: space-between;
 }
-.nav__link {
+.nav_link{
+  position: relative;
+}
+.nav__hyper-txt {
   text-wrap: nowrap;
   line-height: normal;
+  text-decoration: none;
 
   color: var(--color-black);
 }
+
 .search-block {
   height: auto;
   width: auto;
@@ -360,7 +367,6 @@
   border: 1px solid var(--color-lite);
 }
 
-
 .card__description {
   font-family: "Muller";
   color: var(--color-gray);
@@ -421,8 +427,8 @@
 
   background: var(--color-white);
 }
-.shows__card-descr{
-  font-family: 'MullerBold';
+.shows__card-descr {
+  font-family: "MullerBold";
   color: var(--color-blacks);
   font-size: 20px;
 }
@@ -546,7 +552,7 @@
 }
 /* buy */
 .buy-block {
-  background:  var(--color-lite-black);
+  background: var(--color-lite-black);
 }
 .buy-block__frame {
   display: flex;
@@ -620,7 +626,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  color:  var(--color-lite-black);
+  color: var(--color-lite-black);
   font-size: 46px;
   font-weight: 400;
 }
@@ -675,16 +681,32 @@
 }
 /* footer */
 .footer {
-  background:  var(--color-lite-black);
+  background: var(--color-lite-black);
 }
 .footer__frame {
   display: flex;
   justify-content: space-between;
 }
+.footer__logos{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer__logo {
+  margin-bottom: 1rem;
+}
 .footer__nav {
   position: relative;
   max-width: 40%;
   flex-wrap: wrap;
+  display: flex;
+}
+.nav__txt{
+  display: inline;
+  padding: 8% 10%;
+  cursor: pointer;
 }
 .nav__nav-link {
   width: 32%;
@@ -692,26 +714,46 @@
   font-size: 16px;
   font-weight: 400;
 }
-.about__form{
-  width: 80%;
+.footer__nav-item{
+  width: 100%;
+}
+.about__form {
+  width: 83%;
   position: relative;
+}
+.footer__nav-link{
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  flex:5;
+ 
+}
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 0.8rem; 
+  grid-column-gap: 7rem; 
+}
+
+.footer__nav-link:nth-child(3n){
+  margin-right: 0;
 }
 
 .about__form-textarea {
   display: flex;
-   width: 100%;
-    margin-bottom: 30px;
-    padding: 30px;
-    background-color: inherit;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 30px;
-    resize: none;
-    outline: none;
- 
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: inherit;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  resize: none;
+  outline: none;
 }
 .about__form-input {
-  
   margin-bottom: 30px;
   padding: 25px 32px;
   background-color: inherit;
@@ -720,14 +762,12 @@
   color: #fff;
   outline: none;
   width: 100%;
-  
 }
 .about__input-wrapper {
   display: inline-block;
   width: 47%;
-
 }
-.about__input-wrapper--1{
+.about__input-wrapper--1 {
   margin-right: 5%;
 }
 
@@ -744,7 +784,7 @@
   position: absolute;
   appearance: none;
 }
-.aboutus__form-check:checked+.aboutus__form-checkbox {
+.aboutus__form-check:checked + .aboutus__form-checkbox {
   background-image: url(../img/);
 }
 .aboutus__form-checkbox {
@@ -753,4 +793,7 @@
   width: 14px;
   height: 14px;
   background-image: url(../img/);
+}
+.about__form-btn {
+  margin-bottom: 2rem;
 }
