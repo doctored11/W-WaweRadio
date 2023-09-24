@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/animations.css" />
     <link rel="stylesheet" href="./style/reactions.css" />
+    <link rel="stylesheet" href="./style/media.css" />
   </head>
   <body>
     <header class="header">
@@ -79,43 +80,43 @@
               <a href="#" class="nav__hyper-txt"> О нас </a>
             </li>
           </ul>
-        </div>
-        <div class="header__search-block search-block">
-          <form action="#" class="search-block__form">
-            <input
-              type="text"
-              class="search-block__input"
-              placeholder="Поиск"
-            /><span class="search-block__input-line"></span>
-          </form>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            class="search-block__ico search-ico"
-          >
-            <path
-              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-              stroke="#6D31EE"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M21 21L16.65 16.65"
-              stroke="#6D31EE"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <div class="header__search-block search-block">
+            <form action="#" class="search-block__form">
+              <input
+                type="text"
+                class="search-block__input"
+                placeholder="Поиск"
+              /><span class="search-block__input-line"></span>
+            </form>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="search-block__ico search-ico"
+            >
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="#6D31EE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 21L16.65 16.65"
+                stroke="#6D31EE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="main__hero hero frame section">
+      <section class="main__hero hero section">
         <div class="frame main__frame">
           <div class="hero__content">
             <h1 class="hero__title">
@@ -216,8 +217,10 @@
               <div class="card__content-block">
                 <p class="card-time-txt">54</p>
 
-                <h3 class="card__title txt ">Люди сегодня</h3>
-                <p class="card__description txt podcasts__card-txt">Анна Васильева</p>
+                <h3 class="card__title txt">Люди сегодня</h3>
+                <p class="card__description txt podcasts__card-txt">
+                  Анна Васильева
+                </p>
               </div>
               <span class="card__absolute-logo logo--podcast">8 июня</span>
             </li>
@@ -229,10 +232,10 @@
               <div class="card__content-block">
                 <p class="card-time-txt">9:04</p>
 
-                <h3 class="card__title txt ">
-                  Хэллоу, Африка!
-                </h3>
-                <p class="card__description txt podcasts__card-txt">Пётр Дмитриевский</p>
+                <h3 class="card__title txt">Хэллоу, Африка!</h3>
+                <p class="card__description txt podcasts__card-txt">
+                  Пётр Дмитриевский
+                </p>
               </div>
               <span class="card__absolute-logo logo--podcast">5 июня</span>
             </li>
@@ -494,9 +497,9 @@
               />
               <div class="guest-card__content-part">
                 <div class="guest-card__text-block">
-                  <p class="guest-card__title txt txt--light txt--bold"
-                    >Ольга Мартынова</p
-                  >
+                  <p class="guest-card__title txt txt--light txt--bold">
+                    Ольга Мартынова
+                  </p>
                   <p class="guest-card__description txt txt">
                     Российский искусствовед, арт-критик, куратор выставок,
                     дизайнер, кандидат культурологии. Арт-критик газеты
@@ -515,9 +518,9 @@
               />
               <div class="guest-card__content-part">
                 <div class="guest-card__text-block">
-                  <p class="guest-card__title txt txt--light txt--bold"
-                    >Денис Гришин</p
-                  >
+                  <p class="guest-card__title txt txt--light txt--bold">
+                    Денис Гришин
+                  </p>
                   <p class="guest-card__description txt txt">
                     Однозначно, элементы политического процесса являются только
                     методом политического участия и смешаны с не уникальными
@@ -536,9 +539,9 @@
               />
               <div class="guest-card__content-part">
                 <div class="guest-card__text-block">
-                  <p class="guest-card__title txt txt--light txt--bold"
-                    >Ольга Мартынова</p
-                  >
+                  <p class="guest-card__title txt txt--light txt--bold">
+                    Ольга Мартынова
+                  </p>
                   <p class="guest-card__description txt txt">
                     С другой стороны, высококачественный прототип будущего
                     проекта выявляет срочную потребность дальнейших направлений
@@ -566,7 +569,9 @@
           <div class="playlists__right-part right-part">
             <ul class="playlists__list list">
               <li
-                class="list__card card card--verical card--playlists"card__morefont-size: 12px;
+                class="list__card card card--verical card--playlists"
+                card__morefont-size:
+                12px;
                 data-backgroundID="playlist_card1"
               >
                 <p class="card__title">Ploho</p>

@@ -1,0 +1,150 @@
+@media (max-width: 1750px) {
+  .frame {
+    padding: 0 13%;
+  }
+  .section {
+    padding: 4% 0;
+  }
+  .search-block {
+    width: 13%;
+  }
+  .main__hero {
+    padding-top: 130px;
+  }
+  .main__backgroud-content-block {
+    max-width: 30%;
+  }
+  .main__back {
+    z-index: 6;
+
+    background-size: 50%;
+    background-position: center 55%;
+  }
+  .main__backgroud-content-block {
+    position: relative;
+    padding: 3% 0;
+    margin: -3% 0;
+  }
+  .main__circles {
+    width: 56%;
+    height: 56%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .card--playlists {
+    padding: 195px 0.6rem 0.6rem 0.6rem;
+  }
+  .about__icons-block > * {
+    max-width: 45%;
+  }
+  .header__nav {
+    width: 50%;
+  }
+  .header__logo {
+    margin-right: 3%;
+  }
+  .header__nav-block {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1420px) {
+  .frame {
+    padding: 0 10%;
+  }
+  .header {
+    padding-bottom: 0;
+  }
+  .header__frame {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .main__hero {
+    padding-top: 170px;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .header__nav-block {
+    flex-wrap: wrap;
+  }
+  .header__search-block {
+    order: 2;
+  }
+  .header__nav {
+    order: 3;
+  }
+  .header__logo {
+    order: 1;
+  }
+  .header__logo {
+    margin-bottom: 0.5rem;
+  }
+  .header__nav {
+    padding: 0.5rem;
+    position: relative;
+  }
+  .header__nav::after,
+  .header__nav::before {
+    content: " ";
+    height: 1px;
+    left: -20vw;
+    width: 150vw;
+    background-color: var(--color-lite-gray);
+    position: absolute;
+  }
+  .header__nav::before {
+    top: 0;
+  }
+  .header__nav::after {
+    bottom: 0;
+  }
+  .guest__btn {
+    max-width: 40%;
+  }
+  .card--playlists {
+    padding-top: 25%;
+  }
+  .podcast-card {
+    padding-left: 15%;
+  }
+  .shows__card {
+    padding: 20.5% 0 1.2rem 0.2rem;
+  }
+  .footer__nav {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .frame {
+    padding: 0 9.75%;
+  }
+  .logo {
+    transform: scale(0.7);
+    max-width: 115px;
+  }
+  .search-block {
+    width: 23%;
+  }
+ 
+  .header__search-block{
+    display: inline-flex;
+  }
+  .header__search-block{
+    max-height: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 750px) {
+}
+@media (max-width: 550px) {
+}
+@media (max-width: 320px) {
+}

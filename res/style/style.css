@@ -62,10 +62,10 @@
   margin: -2% 0;
 
   margin-right: 8%;
+  min-width: 160px;
   text-wrap: nowrap;
 
-  /* todo сделать не на пикселях*/
-  width: 160px;
+  
 }
 .logo {
   overflow: hidden;
@@ -78,7 +78,7 @@
 }
 .header__nav-block {
   display: flex;
-  min-width: 85%;
+  width: 100%;
   position: relative;
 }
 
