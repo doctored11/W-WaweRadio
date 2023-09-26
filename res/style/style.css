@@ -64,8 +64,6 @@
   margin-right: 8%;
   min-width: 160px;
   text-wrap: nowrap;
-
-  
 }
 .logo {
   overflow: hidden;
@@ -220,7 +218,7 @@
   margin-bottom: 2.9rem;
 }
 .section {
-padding: 5.1% 0;
+  padding: 5.1% 0;
   overflow: hidden;
 }
 
@@ -280,7 +278,6 @@ padding: 5.1% 0;
 }
 .podcasts-section {
   background: var(--color-lite);
-  
 }
 .podcasts-secrion__list {
   justify-content: space-between;
@@ -353,7 +350,7 @@ padding: 5.1% 0;
   position: relative;
   padding-top: 0.8rem;
 }
-.shows{
+.shows {
   padding-bottom: 4.8%;
 }
 .shows__card {
@@ -373,12 +370,16 @@ padding: 5.1% 0;
 .card--vertical {
   padding: 20.5% 0 1.2rem 1rem;
 
-  background-size: 100% auto;
+  background-clip: padding-box;
+  background-size: auto;
   background-repeat: no-repeat;
 
   background-position: top;
 
   border: 1px solid var(--color-lite);
+}
+.card--about:nth-child(1) {
+  background-position: 80% top;
 }
 
 .card__description {
@@ -464,7 +465,6 @@ padding: 5.1% 0;
 /* guests */
 .guests {
   background: var(--color-black);
-  
 }
 .guests__heading {
   margin-bottom: 0.8rem;
@@ -544,7 +544,7 @@ padding: 5.1% 0;
   flex: 10;
   margin-right: 1.9rem;
 }
-.playlists{
+.playlists {
   padding-top: 5.2%;
 }
 .playlists__right-part {
@@ -576,7 +576,7 @@ padding: 5.1% 0;
   font-weight: 400;
   line-height: 22px;
 }
-.playlists__list  .card__title{
+.playlists__list .card__title {
   font-size: 16px;
   margin-bottom: 1px;
 }
@@ -608,6 +608,7 @@ padding: 5.1% 0;
 }
 .buy-block__art-block {
   margin-right: 1.9rem;
+
   /* overflow: hidden; */
   padding-top: 1rem;
   flex: 30;
@@ -650,6 +651,7 @@ padding: 5.1% 0;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-top: 0;
 }
 .art__absolute-block {
   position: absolute;
