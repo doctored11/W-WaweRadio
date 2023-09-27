@@ -314,7 +314,7 @@
     flex-direction: column;
   }
   .podcast-card {
-    padding-left: 25%;
+    padding-left: 30%;
   }
   .podcast-card:nth-last-child(-n + 2) {
     margin-bottom: 30px;
@@ -419,11 +419,165 @@
     margin-bottom: 1rem;
     padding-bottom: 1%;
   }
-  .footer__logos{
+  .footer__logos {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 640px) {
+  .frame {
+    padding: 0 8%;
+  }
+
+  .podcast-card {
+    padding-left: 35%;
+  }
+  .card--playlists {
+    padding: 50% 0.2rem 0.2rem 0.2rem;
+    background-position: top center;
+    background-size: 100%;
+  }
+  .card__absolute-logo--flag {
+    width: 18%;
+    height: 10%;
+    border: 4px var(--color-black) solid;
+    left: 0;
+  }
+  .art__absolute-block {
+    height: 30%;
+    width: 30%;
+    top: 5%;
+  }
+  .art__txt {
+    font-size: 36px;
+  }
+  .buy-block__heading {
+    width: 100%;
+    max-width: 100%;
+  }
+  .buy-block__art {
+    margin-bottom: 0;
+  }
+  .card--about {
+    background-size: auto 65%;
+  }
+  .card_title,
+  .card__descr {
+    font-size: 14px;
+  }
+  .card--about {
+    padding-top: 48%;
+  }
+  .hero__text {
+    margin-right: 0;
+    width: 100%;
+  }
+  .guest-card__description {
+    max-width: 100%;
+  }
+  .about__input-wrapper,
+  .about__form {
+    width: 100%;
+  }
+  .about__input-wrapper--1 {
+    margin-right: 0;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
+  .frame {
+    padding: 0 32px;
+  }
+  .section {
+    padding: 54px 0;
+  }
+  .header__nav {
+    width: 300%;
+    min-width: 200%;
+  }
+
+  .header__logo {
+    transform: scale(0.55) translateX(-45%);
+    max-width: 115px;
+  }
+  .header {
+    padding: 1rem 0;
+  }
+  .header__nav {
+    padding: 0.65rem 0;
+  }
+  .hero__title * {
+    font-size: 32px;
+  }
+  .hero__title {
+    margin: 0;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    margin-bottom: 0.6rem;
+  }
+  .hero__btn {
+    width: 85%;
+    font-size: 14px;
+    padding: 1rem 2.2rem;
+  }
+  .main__hero {
+    padding-top: 8rem;
+    padding-bottom: 40px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .podcast-card {
+    padding: 40% 0 1.7rem 0.5rem;
+    background-position: top center;
+
+    background-size: auto 40%;
+  }
+  .logo--podcast {
+    top: 0;
+    left: 0;
+    max-height: 18px;
+  }
+  .card__title {
+    font-family: "Muller";
+    font-size: 16px;
+  }
+  .txt {
+    font-size: 14px;
+  }
+  .podcasts__card-txt {
+    font-size: 12px;
+  }
+  .guests__content-block {
+    margin-bottom: 1.6rem;
+  }
+  .guests__mini-title {
+    margin: 0;
+  }
+  .guest-card__title {
+    font-size: 20px;
+  }
+  .guest-card__img {
+    margin-bottom: 0.2rem;
+  }
+  .guest-card__description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+  }
+  .guest__btn {
+    max-width: 60%;
+  }
+  .cards-tape__card:not(:last-child) {
+    margin-bottom: 1.8rem;
+  }
+  .art__absolute-block {
+    height: 25%;
+    width: 25%;
+    top: 0;
+  }
+  .buy-block__art {
+    min-height: 220px;
+  }
 }

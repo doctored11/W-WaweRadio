@@ -1,5 +1,5 @@
 
-const podcastCards = document.querySelectorAll('.podcast-card');
+const podcastCards = document.querySelectorAll('.podcast-card__img');
 const showsCard = document.querySelectorAll('.shows__card')
 const playCards = document.querySelectorAll('.card--playlists');
 const flags = document.querySelectorAll('.card__absolute-logo--flag');
