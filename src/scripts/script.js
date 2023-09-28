@@ -4,6 +4,14 @@ const showsCard = document.querySelectorAll('.shows__card')
 const playCards = document.querySelectorAll('.card--playlists');
 const flags = document.querySelectorAll('.card__absolute-logo--flag');
 const peoplesCards = document.querySelectorAll('.card--about');
+import '../styles/normalize.css'; 
+import '../styles/style.css'; 
+import '../styles/animations.css'; 
+import '../styles/reactions.css'; 
+import '../styles/media.css';
+
+
+const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 addBackImages(podcastCards);
 
@@ -15,7 +23,12 @@ function addBackImages(target) {
     target.forEach(function (card) {
 
         const backgroundId = card.getAttribute('data-backgroundId');
-        const imagePath = '../res/source/grafic/backs/' + backgroundId + '.png';
+        let imagePath = '../res/source/grafic/backs/' + backgroundId + '.png';
+        if (screenWidth < 450) {
+            const backgroundMobileId = card.getAttribute('data-mobile-backgroundId');
+            if (backgroundMobileId != null)
+                imagePath = '../res/source/grafic/backs/' + backgroundMobileId + '.png';
+        }
         card.style.backgroundImage = 'url(' + imagePath + ') ';
     });
 }
@@ -29,9 +42,9 @@ const logos = document.querySelectorAll('.logo');
 
 function handleAnimationEnd(arrow, w1, w2) {
     if (!arrow.classList.contains('arrow-active')) {
-        return; 
+        return;
     }
-    
+
     arrow.classList.remove('arrow-active');
     w1.classList.remove('move-w1');
     w2.classList.remove('grow-w2');
@@ -39,7 +52,7 @@ function handleAnimationEnd(arrow, w1, w2) {
 
 function applyAnimation(logo, arrow, w1, w2) {
     arrow.classList.add('arrow-active');
-    
+
     arrow.addEventListener('animationend', () => {
         handleAnimationEnd(arrow, w1, w2);
     }, { once: true });
@@ -48,8 +61,8 @@ function applyAnimation(logo, arrow, w1, w2) {
     w2.addEventListener('animationend', () => {
         handleAnimationEnd(arrow, w1, w2);
     }, { once: true });
-    
-   
+
+
 }
 
 logos.forEach(logo => {
@@ -74,14 +87,14 @@ const circles = backgroundBlock.querySelectorAll('.circle');
 
 backgroundBlock.addEventListener('mouseenter', () => {
     circles.forEach(circle => {
-        circle.classList.add('circle-animate'); 
+        circle.classList.add('circle-animate');
     });
 });
 
 backgroundBlock.addEventListener('mouseleave', () => {
     circles.forEach(circle => {
         circle.addEventListener('animationend', () => {
-            circle.classList.remove('circle-animate'); 
+            circle.classList.remove('circle-animate');
         }, { once: true });
     });
 });

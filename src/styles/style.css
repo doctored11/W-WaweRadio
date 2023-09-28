@@ -305,7 +305,7 @@
   display: inline-block;
   margin-right: 1rem;
 
-  background-size:  50%;
+  background-size: cover;
   background-position: center 80%;
   
   background-repeat: no-repeat;
@@ -857,14 +857,14 @@
   appearance: none;
 }
 .aboutus__form-check:checked + .aboutus__form-checkbox {
-  background-image: url(../img/);
+  /* background-image: url(../img/); */
 }
 .aboutus__form-checkbox {
   position: absolute;
   left: 0;
   width: 14px;
   height: 14px;
-  background-image: url(../img/);
+  /* background-image: url(../img/); */
 }
 .about__form-btn {
   margin-bottom: 2rem;

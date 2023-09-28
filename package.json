@@ -1,0 +1,21 @@
+{
+  "name": "W-Wave",
+  "description": "11",
+  "keywords": [],
+  "author": "#11 && doctored",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "dev": "webpack",
+    "build": "webpack --node-env=production",
+    "clear": "rd /s /q dist"
+  }
+}
