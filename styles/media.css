@@ -111,13 +111,19 @@
     /* padding-left: 17%; */
   }
   .podcast-card__img {
-    width: 20%;
+    min-width: 112px;
+    width: 27%;
   }
   .shows__card {
     padding: 20.5% 0 1.2rem 0.2rem;
   }
   .footer__nav {
     max-width: 75%;
+  }
+  .archive-block__background {
+    height: 80%;
+    background-size: 30%;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -162,12 +168,16 @@
     margin-bottom: 1.6rem;
   }
   .shows__card {
-    padding: 35.8% 0 1.25rem 0.2rem;
+    padding: 168px 0 1.25rem 16px;
     min-width: 40%;
   }
   .shows__left-part {
-    margin-right: 3.5rem;
+    margin-right: 30px;
   }
+  .shows__left-part {
+    flex: 6;
+  }
+
   .shows__card:nth-child(3n) {
     margin-right: 30px;
   }
@@ -207,6 +217,9 @@
   }
   .playlists__list {
     padding-top: 0;
+  }
+  .playlists {
+    padding-bottom: 97px; 
   }
   .playlists__left-part {
     margin-bottom: 1.5rem;
@@ -274,7 +287,7 @@
     flex: 1;
     border: none;
 
-    padding: 35.5% 0 1.2rem 1rem;
+    padding: 34% 0 1.2rem 0;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -282,10 +295,17 @@
   .card--about:nth-child(2n) {
     margin-right: 0;
   }
+  .about__form{
+    width: 100%;
+  }
   .footer__logo {
     max-width: inherit;
     margin: -15%;
     padding: 15%;
+  }
+  .btn--light {
+    width: 70%;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -547,9 +567,8 @@
 
     background-size: auto 40%;
   }
-  .card__content-block{
+  .card__content-block {
     padding: 0 0 1.7rem 0.5rem;
-   
   }
   .podcast-card__img {
     width: 100%;
