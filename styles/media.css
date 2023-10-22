@@ -1,3 +1,9 @@
+
+
+/* Начни с секции плейлистов 780. Только стили! */
+
+
+
 @media (max-width: 1750px) {
   .frame {
     padding: 0 13%;
@@ -219,7 +225,7 @@
     padding-top: 0;
   }
   .playlists {
-    padding-bottom: 97px; 
+    padding-bottom: 97px;
   }
   .playlists__left-part {
     margin-bottom: 1.5rem;
@@ -295,7 +301,7 @@
   .card--about:nth-child(2n) {
     margin-right: 0;
   }
-  .about__form{
+  .about__form {
     width: 100%;
   }
   .footer__logo {
@@ -313,8 +319,63 @@
   .frame {
     padding: 0 114px;
   }
+  .shows__frame {
+    flex-direction: column;
+    position: relative;
+  }
+  .shows__archive-block {
+    position: absolute;
+    bottom: 0;
+    max-height: 120px;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    padding-left: 190px;
+  }
+  .shows__right-part {
+    padding-bottom: 195px;
+  }
+
+  .archive-block__background {
+    position: absolute;
+    left: 17%;
+    width: 70px;
+    height: 96px;
+    background-size: 100%;
+  }
+  .archive-block__description,
+  .archive-block__bth {
+  }
+  .archive-block__bth {
+    width: 40%;
+  }
+  .archive-block__description {
+    width: 255px;
+  }
+
   .section {
     padding: 93px 0;
+  }
+  .shows {
+    padding-bottom: 20px;
+  }
+  .guests__content-block{
+    margin-bottom: 47px;
+  }
+  .btn--dark{
+    box-sizing:content-box;
+    padding: 12px 10px;
+    max-width: 140px;
+    min-width: none;
+
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    max-height: 16px;
+  }
+  .shows__heading {
+    margin-bottom: 110px;
   }
   .main__backgroud-content-block {
     display: none;
@@ -343,7 +404,7 @@
     min-height: 140px;
     max-height: 100%;
     position: inherit;
-    width: 30%;
+    width: 112px;
     height: 100%;
   }
   .podcast-card:nth-last-child(-n + 2) {
@@ -359,10 +420,13 @@
   .guest-card__img {
     padding: 0;
     margin: 0;
-    margin-bottom: 1.9rem;
+    margin-bottom: 25px;
   }
   .guest-card__text-block {
     margin-bottom: 1.9rem;
+  }
+  .guests {
+    padding-bottom: 90px;
   }
   .guests__description {
     max-width: 100%;
