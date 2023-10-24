@@ -4,7 +4,11 @@ const showsCard = document.querySelectorAll('.shows__card')
 const playCards = document.querySelectorAll('.card--playlists');
 const flags = document.querySelectorAll('.card__absolute-logo--flag');
 const peoplesCards = document.querySelectorAll('.card--about');
-
+import '../styles/normalize.css'; 
+import '../styles/style.css'; 
+import '../styles/animations.css'; 
+import '../styles/reactions.css'; 
+import '../styles/media.css';
 
 
 const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -19,11 +23,11 @@ function addBackImages(target) {
     target.forEach(function (card) {
 
         const backgroundId = card.getAttribute('data-backgroundId');
-        let imagePath = '../src/source/grafic/backs/' + backgroundId + '.png';
+        let imagePath = '../source/grafic/backs/' + backgroundId + '.png';
         if (screenWidth < 450) {
             const backgroundMobileId = card.getAttribute('data-mobile-backgroundId');
             if (backgroundMobileId != null)
-                imagePath = '../src/source/grafic/backs/' + backgroundMobileId + '.png';
+                imagePath = '../source/grafic/backs/' + backgroundMobileId + '.png';
         }
         card.style.backgroundImage = 'url(' + imagePath + ') ';
     });

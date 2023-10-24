@@ -111,13 +111,19 @@
     /* padding-left: 17%; */
   }
   .podcast-card__img {
-    width: 20%;
+    min-width: 112px;
+    width: 27%;
   }
   .shows__card {
     padding: 20.5% 0 1.2rem 0.2rem;
   }
   .footer__nav {
     max-width: 75%;
+  }
+  .archive-block__background {
+    height: 80%;
+    background-size: 30%;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -162,12 +168,16 @@
     margin-bottom: 1.6rem;
   }
   .shows__card {
-    padding: 35.8% 0 1.25rem 0.2rem;
+    padding: 168px 0 1.25rem 16px;
     min-width: 40%;
   }
   .shows__left-part {
-    margin-right: 3.5rem;
+    margin-right: 30px;
   }
+  .shows__left-part {
+    flex: 6;
+  }
+
   .shows__card:nth-child(3n) {
     margin-right: 30px;
   }
@@ -207,6 +217,9 @@
   }
   .playlists__list {
     padding-top: 0;
+  }
+  .playlists {
+    padding-bottom: 97px;
   }
   .playlists__left-part {
     margin-bottom: 1.5rem;
@@ -274,7 +287,7 @@
     flex: 1;
     border: none;
 
-    padding: 35.5% 0 1.2rem 1rem;
+    padding: 34% 0 1.2rem 0;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -282,10 +295,17 @@
   .card--about:nth-child(2n) {
     margin-right: 0;
   }
+  .about__form {
+    width: 100%;
+  }
   .footer__logo {
     max-width: inherit;
     margin: -15%;
     padding: 15%;
+  }
+  .btn--light {
+    width: 70%;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -293,8 +313,76 @@
   .frame {
     padding: 0 114px;
   }
+  .shows__frame {
+    flex-direction: column;
+    position: relative;
+  }
+  .shows__archive-block {
+    position: absolute;
+    bottom: 0;
+    max-height: 120px;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    padding-left: 190px;
+  }
+  .shows__right-part {
+    padding-bottom: 195px;
+  }
+
+  .archive-block__background {
+    position: absolute;
+    left: 17%;
+    width: 70px;
+    height: 96px;
+    background-size: 100%;
+  }
+  .archive-block__description,
+  .archive-block__bth {
+  }
+  .archive-block__bth {
+    width: 40%;
+  }
+  .archive-block__description {
+    width: 255px;
+  }
+
   .section {
     padding: 93px 0;
+  }
+  .playlists {
+    padding-top: 96px;
+    padding-bottom: 111px;
+  }
+  .playlists__heading {
+    margin-bottom: 12px;
+  }
+  .playlists__info {
+    margin-bottom: 6px;
+  }
+  .playlists__left-part {
+    margin-bottom: 37px;
+  }
+  .shows {
+    padding-bottom: 20px;
+  }
+  .guests__content-block {
+    margin-bottom: 47px;
+  }
+  .btn--dark {
+    box-sizing: content-box;
+    padding: 12px 10px;
+    max-width: 140px;
+    min-width: none;
+
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    max-height: 16px;
+  }
+  .shows__heading {
+    margin-bottom: 110px;
   }
   .main__backgroud-content-block {
     display: none;
@@ -323,7 +411,7 @@
     min-height: 140px;
     max-height: 100%;
     position: inherit;
-    width: 30%;
+    width: 112px;
     height: 100%;
   }
   .podcast-card:nth-last-child(-n + 2) {
@@ -339,10 +427,13 @@
   .guest-card__img {
     padding: 0;
     margin: 0;
-    margin-bottom: 1.9rem;
+    margin-bottom: 25px;
   }
   .guest-card__text-block {
     margin-bottom: 1.9rem;
+  }
+  .guests {
+    padding-bottom: 90px;
   }
   .guests__description {
     max-width: 100%;
@@ -352,7 +443,7 @@
   }
   .card--playlists {
     min-width: 40%;
-    padding: 2.4rem 0 2.4rem 23%;
+    padding: 37px 0 37px 23%;
   }
   .card--playlists:nth-child(3n) {
     margin-right: 30px;
@@ -366,6 +457,9 @@
   .card--playlists:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
+  .buy-block {
+    padding-top: 53px;
+  }
   .buy-block__frame {
     display: flex;
     flex-direction: column;
@@ -373,6 +467,9 @@
   .buy-block__art-block {
     margin: 0;
     padding: 0;
+  }
+  .buy-block__separation-block {
+    margin-bottom: 16px;
   }
   .buy-block__art {
     min-height: 470px;
@@ -382,7 +479,13 @@
     width: 85%;
   }
   .buy-block__txt {
-    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .buy-block__txt:nth-child(2n) {
+    margin-bottom: 30px;
+  }
+  .about__text-block {
+    margin-bottom: 16px;
   }
   .art__absolute-block {
     width: 160px;
@@ -390,6 +493,7 @@
     top: 0;
     left: 0;
   }
+
   .art__txt {
     font-size: 48px;
   }
@@ -419,6 +523,12 @@
   .card--about {
     padding: 52% 0 0 0;
   }
+  .card--about:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 28px;
+  }
+  .footer {
+    padding-top: 98px;
+  }
   .footer__frame {
     display: flex;
 
@@ -431,6 +541,17 @@
   }
   .footer__logos {
     margin-bottom: 3rem;
+  }
+  .about__text-content {
+    margin-bottom: 10px;
+  }
+  .about__list {
+    margin-bottom: 30px;
+  }
+  .about__input-wrapper {
+    display: block;
+    margin-right: 0;
+    width: 100%;
   }
 }
 @media (max-width: 640px) {
@@ -519,17 +640,30 @@
   }
   .hero__title * {
     font-size: 32px;
+    height: 32px;
   }
   .hero__title {
     margin: 0;
+    padding: 0;
+    display: inline-block;
   }
 
   .hero__text {
     font-size: 14px;
     margin-bottom: 0.6rem;
   }
+  .podcast-card {
+    min-height: 185px;
+  }
+  .shows__right-part {
+    padding-bottom: 160px;
+  }
+  .archive-block__bth {
+    margin: 0;
+    padding: 8px 53px;
+  }
   .hero__btn {
-    width: 85%;
+    width: 78%;
     font-size: 14px;
     padding: 1rem 2.2rem;
   }
@@ -539,6 +673,7 @@
   }
   .heading {
     font-size: 24px;
+    margin-bottom: 20px;
   }
   .podcast-card {
     background-position: top center;
@@ -547,17 +682,27 @@
 
     background-size: auto 40%;
   }
-  .card__content-block{
-    padding: 0 0 1.7rem 0.5rem;
-   
+  .card__content-block {
+    padding: 0 0 30px 0.5rem;
+  }
+
+  .shows__card {
+    background-size: 100% 50px;
+    padding: 60px 0 12px 10px;
+    height: 150px;
+  }
+
+  .list__card.card--about:not(:nth-last-child(2n)) {
+    margin-right: 30px;
   }
   .podcast-card__img {
     width: 100%;
     height: 30%;
-    min-height: 65px;
+    min-height: 72px;
     margin-right: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
   }
+
   .logo--podcast {
     top: 0;
     left: 0;
@@ -568,7 +713,25 @@
     font-size: 16px;
   }
   .txt {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .card__txt {
+    margin-bottom: 0;
+  }
+  .card__description {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .card__link-arrow-block {
+    position: absolute;
+    bottom: 12px;
+  }
+  .card__link {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
   }
   .podcasts__card-txt {
     font-size: 12px;
@@ -576,15 +739,39 @@
   .guests__content-block {
     margin-bottom: 1.6rem;
   }
+  .guests {
+    padding-top: 58px;
+  }
+  .shows__archive-block {
+    width: 80vw;
+    padding: 0;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    padding-left: 32vw;
+    min-height: 105px;
+    max-height: 110px;
+
+    margin-left: -10vw;
+    padding-left: 30vw;
+  }
+  .archive-block__background {
+    left: 12vw;
+    margin-left: -10%;
+    padding-left: 10%;
+    margin-bottom: 0;
+  }
+  .archive-block__description {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
   .guests__mini-title {
     margin: 0;
   }
   .guest-card__title {
     font-size: 20px;
   }
-  .guest-card__img {
-    margin-bottom: 0.2rem;
-  }
+
   .guest-card__description {
     font-size: 16px;
     font-style: normal;
@@ -595,7 +782,7 @@
     max-width: 60%;
   }
   .cards-tape__card:not(:last-child) {
-    margin-bottom: 1.8rem;
+    margin-bottom: 25px;
   }
   .art__absolute-block {
     height: 25%;
@@ -604,5 +791,88 @@
   }
   .buy-block__art {
     min-height: 220px;
+  }
+  .guests__mini-title,
+  .guests__description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .guests__heading {
+    margin-bottom: 10px;
+  }
+  .guests__content-block {
+    margin-bottom: 36px;
+  }
+  .guest-card__img {
+    height: 159px;
+    margin-bottom: 10px;
+  }
+  .btn--dark {
+    padding: 7px 0;
+  }
+  .playlists__heading {
+    margin-bottom: 6px;
+  }
+  .playlists__description {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .playlists__info {
+    margin-bottom: 15px;
+  }
+  .card--playlists {
+    padding: 123px 10px 10px 10px;
+  }
+  .playlists__list .card__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: -3px;
+  }
+  .card__more {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  .playlists {
+    padding-bottom: 46px;
+  }
+  .buy-block__art-block {
+    margin-bottom: 38px;
+  }
+  .buy-block__heading {
+    margin-bottom: 10px;
+  }
+  .buy-block__txt {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  .buy-block__txt:nth-child(2n) {
+    margin-bottom: 10px;
+  }
+  .buy-block__price-txt {
+    margin-bottom: 20px;
+  }
+  .buy-block__btn {
+    font-size: 16px;
+  }
+  .about__icons-block {
+    display: none;
+  }
+  .card--about {
+    background-size: cover;
+    background-position: center top;
+    height: 113px;
+    width: 100%;
+    padding: 45% 0 0 ;
+  }
+  .list__card.card--about:nth-child(2n) {
+    margin-right: 0;
   }
 }
