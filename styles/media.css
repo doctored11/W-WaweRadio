@@ -302,6 +302,7 @@
     max-width: inherit;
     margin: -15%;
     padding: 15%;
+    margin-bottom: 2%;
   }
   .btn--light {
     width: 70%;
@@ -521,10 +522,10 @@
     height: 112px;
   }
   .card--about {
-    padding: 52% 0 0 0;
+    padding: 53% 0 0 0;
   }
   .card--about:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 28px;
+    margin-bottom: 33px;
   }
   .footer {
     padding-top: 98px;
@@ -535,12 +536,24 @@
     flex-direction: column;
     align-items: center;
   }
+  .footer__nav {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer__logos {
+
+    display: flex;
+    align-items: center;
+  }
+  .footer__socials {
+    scale: 150%;
+  }
   .footer__logo {
     margin-bottom: 1rem;
     padding-bottom: 1%;
   }
   .footer__logos {
-    margin-bottom: 3rem;
+    margin-bottom: 90px;
   }
   .about__text-content {
     margin-bottom: 10px;
@@ -617,6 +630,9 @@
   }
 }
 @media (max-width: 420px) {
+  .txt {
+    font-size: 12px;
+  }
   .frame {
     padding: 0 32px;
   }
@@ -636,8 +652,13 @@
     padding: 1rem 0;
   }
   .header__nav {
-    padding: 0.65rem 0;
+    width: 320px;
+    padding: 18px 0;
   }
+  .hero__title-txt {
+    margin-right: -5px;
+  }
+
   .hero__title * {
     font-size: 32px;
     height: 32px;
@@ -646,14 +667,23 @@
     margin: 0;
     padding: 0;
     display: inline-block;
+    margin-bottom: -8px;
   }
 
+  .card__txt {
+    margin-bottom: 0;
+  }
+  .card__title {
+    font-family: "Muller";
+    font-size: 16px;
+  }
   .hero__text {
     font-size: 14px;
-    margin-bottom: 0.6rem;
+    margin-bottom: 20px;
   }
+
   .podcast-card {
-    min-height: 185px;
+    min-height: 180px;
   }
   .shows__right-part {
     padding-bottom: 160px;
@@ -664,7 +694,7 @@
   }
   .hero__btn {
     width: 78%;
-    font-size: 14px;
+    font-size: 16px;
     padding: 1rem 2.2rem;
   }
   .main__hero {
@@ -673,7 +703,7 @@
   }
   .heading {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .podcast-card {
     background-position: top center;
@@ -683,13 +713,30 @@
     background-size: auto 40%;
   }
   .card__content-block {
-    padding: 0 0 30px 0.5rem;
+    padding: 0 0 32px 16px;
   }
-
+  .shows {
+    padding-top: 53px;
+  }
+  .shows__right-part {
+    padding-top: 0;
+  }
   .shows__card {
     background-size: 100% 50px;
     padding: 60px 0 12px 10px;
     height: 150px;
+  }
+  .shows__heading {
+    margin-bottom: 28px;
+  }
+  .card-time-txt {
+    margin-bottom: 10px;
+  }
+  .shows__card-txt {
+    font-size: 9px;
+  }
+  .archive-block__description {
+    font-size: 14px;
   }
 
   .list__card.card--about:not(:nth-last-child(2n)) {
@@ -700,7 +747,7 @@
     height: 30%;
     min-height: 72px;
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .logo--podcast {
@@ -708,16 +755,7 @@
     left: 0;
     max-height: 18px;
   }
-  .card__title {
-    font-family: "Muller";
-    font-size: 16px;
-  }
-  .txt {
-    font-size: 12px;
-  }
-  .card__txt {
-    margin-bottom: 0;
-  }
+
   .card__description {
     font-size: 12px;
     font-style: normal;
@@ -735,6 +773,7 @@
   }
   .podcasts__card-txt {
     font-size: 12px;
+    margin-bottom: 0;
   }
   .guests__content-block {
     margin-bottom: 1.6rem;
@@ -752,7 +791,7 @@
     max-height: 110px;
 
     margin-left: -10vw;
-    padding-left: 30vw;
+    padding-left: 31vw;
   }
   .archive-block__background {
     left: 12vw;
@@ -782,7 +821,7 @@
     max-width: 60%;
   }
   .cards-tape__card:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 29px;
   }
   .art__absolute-block {
     height: 25%;
@@ -797,23 +836,23 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 160%;
   }
   .guests__heading {
     margin-bottom: 10px;
   }
   .guests__content-block {
-    margin-bottom: 36px;
+    margin-bottom: 29px;
   }
   .guest-card__img {
     height: 159px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
   .btn--dark {
     padding: 7px 0;
   }
   .playlists__heading {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
   .playlists__description {
     font-size: 12px;
@@ -823,6 +862,12 @@
   }
   .playlists__info {
     margin-bottom: 15px;
+  }
+  .playlists__left-part {
+    margin-bottom: 35px;
+  }
+  .playlists__right-part {
+    width: 100%;
   }
   .card--playlists {
     padding: 123px 10px 10px 10px;
@@ -843,7 +888,13 @@
     padding-bottom: 46px;
   }
   .buy-block__art-block {
-    margin-bottom: 38px;
+    margin-bottom: 42px;
+  }
+  .buy-block__separation-block {
+    margin-bottom: 14px;
+  }
+  .buy-block__price-txt {
+    font-size: 24px;
   }
   .buy-block__heading {
     margin-bottom: 10px;
@@ -854,7 +905,11 @@
     line-height: 160%;
   }
   .buy-block__txt:nth-child(2n) {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+  }
+  .buy-block__btn {
+    padding: 1rem 0.6rem 1rem 2.7rem;
+    border: 2px solid #f0d288;
   }
   .buy-block__price-txt {
     margin-bottom: 20px;
@@ -865,14 +920,44 @@
   .about__icons-block {
     display: none;
   }
+
+  .about__txt {
+    line-height: 160%;
+    font-size: 14px;
+  }
+  .about__txt--bold {
+    font-weight: 700;
+    line-height: 150%;
+  }
   .card--about {
-    background-size: cover;
+    background-size: 100%;
     background-position: center top;
-    height: 113px;
+    height: 215px;
     width: 100%;
-    padding: 45% 0 0 ;
+    padding: 49% 0 0;
   }
   .list__card.card--about:nth-child(2n) {
     margin-right: 0;
   }
+  .about__text-content {
+    margin-bottom: 11px;
+  }
+  .card__descr {
+    line-height: 16px;
+  }
+  .about__form-input {
+    padding: 15px 32px;
+  }
+  .about__form-btn {
+    padding: 0.9rem 2.5rem;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .footer__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две равные колонки */
+    grid-row-gap: 0.8rem;
+    grid-column-gap: 7rem;
+}
+
 }
