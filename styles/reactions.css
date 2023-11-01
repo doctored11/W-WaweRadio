@@ -1,3 +1,6 @@
+*:focus{
+  outline: 1px var(--color-lite-perple) solid;
+}
 .nav__hyper-txt {
   position: relative;
 }
@@ -30,12 +33,26 @@
   background-color: var(--color-lilitic);
   color: var(--color-white);
 }
+
+.btn:focus {
+  background-color: var(--color-lilitic);
+  outline: none;
+  color: var(--color-white);
+  border-color: var(--color-lite-perple);
+}
+.nav__hyper-txt:focus {
+  background-color: var(--color-lilitic);
+  outline: none;
+  color: var(--color-white);
+}
 /*  */
 .search-block__input {
   position: relative;
   z-index: 4;
 }
-
+.search-block__input{
+  outline: none;
+}
 .search-block__input-line {
   position: absolute;
   top: 0;
@@ -123,4 +140,41 @@
 .social__logo:hover path {
   stroke: var(--color-lilitic);
   fill: var(--color-lilitic);
+}
+.card__link-arrow-block:focus{
+  background-color: var(--color-lilitic);
+  color: var(--color-white);
+  outline: none;
+}
+.card__link-arrow-block:focus *{
+  
+  color: var(--color-white);
+  fill: var(--color-white)
+}
+.card__more:focus{
+  background-color: var(--color-lilitic);
+  color: var(--color-white);
+  outline: none;
+}
+.about__form-textarea:focus,
+.about__form-input:focus{
+  border-color: var(--color-lite-perple);
+}
+.about__form-checkbox:focus{
+  outline: 1px   var(--color-lite-perple) solid ;
+  transform: scale(120%);
+}
+.social__logo:focus{
+  outline: none;
+}
+.social__logo:focus *{
+  fill: var(--color-lilitic)
+}
+.footer__nav-item:focus{
+  outline: none;
+}
+.footer__nav-item:focus >*{
+  outline: none;
+  background-color: var(--color-lilitic);
+  color: var(--color-white);
 }

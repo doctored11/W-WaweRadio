@@ -435,6 +435,7 @@
   text-decoration: none;
 }
 .card__link-arrow-block {
+  width: max-content;
   display: flex;
   flex-direction: row;
   align-items: center;
