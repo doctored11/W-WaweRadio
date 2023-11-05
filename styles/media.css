@@ -160,6 +160,7 @@
     height: 75%;
     transform: translateX(-50%) translateY(-60%);
   }
+ 
   .main__back {
     background-size: 65%;
     background-position: center 40%;
@@ -323,6 +324,9 @@
   }
   .frame {
     padding: 0 114px;
+  }
+  .podcasts-section__list{
+    flex-direction: column;
   }
   .shows__frame {
     flex-direction: column;
@@ -724,7 +728,7 @@
     background-size: auto 40%;
   }
   .card__content-block {
-    padding: 0 0 32px 16px;
+    padding: 0 0 27px 16px;
   }
   .shows {
     padding-top: 53px;

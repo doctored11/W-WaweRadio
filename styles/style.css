@@ -282,6 +282,7 @@
   margin: 0;
 }
 .podcasts-section {
+  padding-top: 98px;
   background: var(--color-lite);
 }
 .podcasts-secrion__list {
@@ -317,7 +318,7 @@
   background-repeat: no-repeat;
 }
 .card__content-block {
-  padding: 40px 0 38px 0;
+  padding: 36px 0 38px 0;
 }
 .podcast-card {
   min-width: 45%;
@@ -495,6 +496,7 @@
 /* guests */
 .guests {
   background: var(--color-black);
+  padding-bottom: 93px;
 }
 .guests__heading {
   margin-bottom: 0.8rem;
@@ -587,7 +589,7 @@
   margin-bottom: 1rem;
 }
 .playlists {
-  padding-top: 98px;
+  padding-top: 95px;
   padding-bottom: 96px;
 }
 .playlists__span-logo {
