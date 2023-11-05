@@ -158,3 +158,10 @@ about.addEventListener('mouseenter', () => {
 
 // const length = path.getTotalLength();
 // console.log('Длина контура:', length);
+const clickableElements = document.querySelectorAll('a, button,label');
+
+clickableElements.forEach(element => {
+  element.addEventListener('click', function() {
+    this.blur(); 
+  });
+});
