@@ -83,16 +83,19 @@
   .header__nav {
     padding: 0.5rem 0;
     position: relative;
+    top: 0;
     width: 100%;
     order: 3;
+    z-index: 100
   }
   .header__nav::after,
   .header__nav::before {
     content: " ";
     height: 1px;
     left: -20vw;
-    width: 150vw;
+    width: 120vw;
     background-color: var(--color-lite-gray);
+    
     position: absolute;
   }
   .header__nav::before {
@@ -160,7 +163,7 @@
     height: 75%;
     transform: translateX(-50%) translateY(-60%);
   }
- 
+
   .main__back {
     background-size: 65%;
     background-position: center 40%;
@@ -199,6 +202,9 @@
   }
   .playlists__frame {
     flex-direction: column;
+  }
+  .shows {
+    padding-bottom: 97px;
   }
   .card--playlists {
     padding: 2.3rem 0 2.3rem 14.8%;
@@ -296,10 +302,10 @@
   .card--about:nth-child(2n) {
     margin-right: 0;
   }
-  .card--about:nth-child(-n+2) {
+  .card--about:nth-child(-n + 2) {
     margin-bottom: 18px;
   }
-  .about__list{
+  .about__list {
     margin-bottom: 20px;
   }
   .about__form {
@@ -318,14 +324,13 @@
 }
 
 @media (max-width: 780px) {
-
-  *:focus{
-    outline:none;
+  *:focus {
+    outline: none;
   }
   .frame {
     padding: 0 114px;
   }
-  .podcasts-section__list{
+  .podcasts-section__list {
     flex-direction: column;
   }
   .shows__frame {
@@ -362,7 +367,9 @@
   .archive-block__description {
     width: 255px;
   }
-  .hero__text{width: 100%;}
+  .hero__text {
+    width: 100%;
+  }
   .section {
     padding: 93px 0;
   }
@@ -435,7 +442,7 @@
   .podcast-card:last-child {
     margin-bottom: 0;
   }
-  
+
   .guest-card {
     display: flex;
     flex-direction: column;
@@ -556,7 +563,6 @@
     max-width: 100%;
   }
   .footer__logos {
-
     display: flex;
     align-items: center;
   }
@@ -574,7 +580,7 @@
     margin-bottom: 10px;
   }
   .about__list {
-    margin-bottom: 22px;
+    margin-bottom: 35px;
   }
   .about__input-wrapper {
     display: block;
@@ -645,6 +651,11 @@
   }
 }
 @media (max-width: 420px) {
+
+  .header__nav::after,
+  .header__nav::before {
+    width: 560px;
+  }
   .txt {
     font-size: 12px;
   }
@@ -655,10 +666,24 @@
     padding: 54px 0;
   }
   .header__nav {
-    width: 300%;
-    min-width: 200%;
-  }
+    width: 120%;
+    /* min-width: 200%; */
+    overflow: auto;
+    padding: 18px 10%;
 
+    margin: 0 -10%;
+  }
+ 
+  .nav{
+    min-width: 400px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .footer__socials {
+    /* min-width: 400px;
+    justify-content: flex-start */
+   
+  }
   .header__logo {
     transform: scale(0.55) translateX(-45%);
     max-width: 115px;
@@ -666,10 +691,7 @@
   .header {
     padding: 1rem 0;
   }
-  .header__nav {
-    width: 320px;
-    padding: 18px 0;
-  }
+ 
   .hero__title-txt {
     margin-right: -5px;
   }
@@ -731,7 +753,8 @@
     padding: 0 0 27px 16px;
   }
   .shows {
-    padding-top: 53px;
+    padding-top: 58px;
+    padding-bottom: 58px;
   }
   .shows__right-part {
     padding-top: 0;
@@ -794,10 +817,17 @@
     margin-bottom: 1.6rem;
   }
   .guests {
-    padding-top: 62px;
+    padding-top: 56px;
+    padding-bottom: 50px;
   }
-  .about{
-    padding-top: 51px;
+  .about {
+    padding-top: 52px;
+  }
+  .about__list {
+    margin-bottom: 25px;
+  }
+  .about__form-textarea {
+    border-radius: 15px;
   }
   .shows__archive-block {
     width: 80vw;
@@ -976,6 +1006,5 @@
     grid-template-columns: 1fr 1fr; /* Две равные колонки */
     grid-row-gap: 0.8rem;
     grid-column-gap: 7rem;
-}
-
+  }
 }

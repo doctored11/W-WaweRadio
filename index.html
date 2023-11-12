@@ -62,24 +62,25 @@
               </g>
             </svg>
           </a>
-
-          <ul class="header__nav nav">
-            <li class="nav__link txt">
-              <a href="#podcasts" class="nav__hyper-txt"> Подкасты </a>
-            </li>
-            <li class="nav__link txt">
-              <a href="#shows" class="nav__hyper-txt"> Передачи </a>
-            </li>
-            <li class="nav__link txt">
-              <a href="#guests" class="nav__hyper-txt"> Гости </a>
-            </li>
-            <li class="nav__link txt">
-              <a href="#playlists" class="nav__hyper-txt"> Плейлисты </a>
-            </li>
-            <li class="nav__link txt">
-              <a href="#buy-block" class="nav__hyper-txt"> О нас </a>
-            </li>
-          </ul>
+          <div class="header__nav">
+            <ul class="header__nav-nav nav">
+              <li class="nav__link txt">
+                <a href="#podcasts" class="nav__hyper-txt"> Подкасты </a>
+              </li>
+              <li class="nav__link txt">
+                <a href="#shows" class="nav__hyper-txt"> Передачи </a>
+              </li>
+              <li class="nav__link txt">
+                <a href="#guests" class="nav__hyper-txt"> Гости </a>
+              </li>
+              <li class="nav__link txt">
+                <a href="#playlists" class="nav__hyper-txt"> Плейлисты </a>
+              </li>
+              <li class="nav__link txt">
+                <a href="#buy-block" class="nav__hyper-txt"> О нас </a>
+              </li>
+            </ul>
+          </div>
           <div class="header__search-block search-block">
             <form action="#" class="search-block__form">
               <input
@@ -523,7 +524,9 @@
                     как куратор музея «Гараж», коим является с 2016 года.
                   </p>
                 </div>
-                <button class="guests__btn btn btn--dark">Эфиры с гостем</button>
+                <button class="guests__btn btn btn--dark">
+                  Эфиры с гостем
+                </button>
               </div>
             </li>
             <li class="cards-tape__card guest-card">
@@ -544,7 +547,9 @@
                     возрастает их статус бесполезности.
                   </p>
                 </div>
-                <button class="guests__btn btn btn--dark">Эфиры с гостем</button>
+                <button class="guests__btn btn btn--dark">
+                  Эфиры с гостем
+                </button>
               </div>
             </li>
             <li class="cards-tape__card guest-card">
@@ -565,7 +570,9 @@
                     реплицированные с зарубежных источников.
                   </p>
                 </div>
-                <button class="guests__btn btn btn--dark">Эфиры с гостем</button>
+                <button class="guests__btn btn btn--dark">
+                  Эфиры с гостем
+                </button>
               </div>
             </li>
           </ul>
@@ -586,7 +593,6 @@
             <ul class="playlists__list list">
               <li
                 class="list__card card card--verical card--playlists"
-               
                 data-backgroundID="playlist_card1"
               >
                 <p class="card__title">Ploho</p>
@@ -721,7 +727,7 @@
           </div>
         </div>
       </section>
-      <section class="buy-block section"id="buy-block">
+      <section class="buy-block section" id="buy-block">
         <div class="frame buy-block__frame">
           <div class="buy-block__art-block">
             <div class="buy-block__art art">
@@ -823,10 +829,12 @@
           <ul class="about__list list">
             <li
               class="list__card card card--vertical card--about"
-              data-backgroundID="man1" 
+              data-backgroundID="man1"
               data-mobile-backgroundId="mobile/man1"
             >
-              <p class="card__title card__title--light txt txt--bold txt--light">
+              <p
+                class="card__title card__title--light txt txt--bold txt--light"
+              >
                 Дмитрий Гутенберг
               </p>
               <p class="card__descr txt txt">
@@ -838,7 +846,11 @@
               data-backgroundID="man2"
               data-mobile-backgroundId="mobile/man2"
             >
-              <p class="card__title card__title--light txt txt--bold txt--light">Анна Васильева</p>
+              <p
+                class="card__title card__title--light txt txt--bold txt--light"
+              >
+                Анна Васильева
+              </p>
               <p class="card__descr txt txt">
                 Как я здесь оказалась? А главное — зачем?
               </p>
@@ -847,9 +859,10 @@
               class="list__card card card--vertical card--about"
               data-backgroundID="man3"
               data-mobile-backgroundId="mobile/man3"
-
             >
-              <p class="card__title card__title--light txt txt--bold txt--light">
+              <p
+                class="card__title card__title--light txt txt--bold txt--light"
+              >
                 Пётр Дмитриевский
               </p>
               <p class="card__descr txt txt">
@@ -860,9 +873,10 @@
               class="list__card card card--vertical card--about"
               data-backgroundID="man4"
               data-mobile-backgroundId="mobile/man4"
-
             >
-              <p class="card__title card__title--light txt txt--bold txt--light">
+              <p
+                class="card__title card__title--light txt txt--bold txt--light"
+              >
                 Татьяна Флеганова
               </p>
               <p class="card__descr txt txt">
@@ -872,12 +886,7 @@
           </ul>
           <div class="about__form-block">
             <!-- Блок с формами -->
-            <form
-              class="about__form"
-              
-              method="post"
-              autocomplete="off"
-            >
+            <form class="about__form" method="post" autocomplete="off">
               <textarea
                 class="about__form-textarea"
                 placeholder="Что скажете?"
@@ -907,9 +916,12 @@
               <button class="about__form-btn btn btn--solid" type="submit">
                 Отправить
               </button>
-              <label class="about__form-label" tabindex="-1"  >
-                <input class="about__form-check" type="checkbox" tabindex="-1"  />Согласен на
-                обработку персональных данных
+              <label class="about__form-label txt" tabindex="-1">
+                <input
+                  class="about__form-check"
+                  type="checkbox"
+                  tabindex="-1"
+                />Согласен на обработку персональных данных
                 <span class="about__form-checkbox" tabindex="0"></span>
               </label>
             </form>
@@ -920,7 +932,7 @@
     <footer class="footer section">
       <div class="frame footer__frame">
         <div class="footer__logos logos">
-          <a href="#" class="footer__logo logo logo--light" >
+          <a href="#" class="footer__logo logo logo--light">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="160"
@@ -961,7 +973,7 @@
               </g>
             </svg>
           </a>
-          <ul class="footer__socials social nav">
+          <ul class="footer__socials social ">
             <li class="social__logo" tabindex="0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -983,7 +995,7 @@
                 </defs>
               </svg>
             </li>
-            <li class="social__logo"  tabindex="0"> 
+            <li class="social__logo" tabindex="0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -1010,7 +1022,7 @@
                 </defs>
               </svg>
             </li>
-            <li class="social__logo"  tabindex="0">
+            <li class="social__logo" tabindex="0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -1028,7 +1040,7 @@
             </li>
           </ul>
         </div>
-        <ul class="footer__nav nav">
+        <ul class="footer__nav">
           <li class="nav__nav-link footer__nav-item" tabindex="0">
             <p class="nav__txt txt txt--light footer__nav-txt">Подкасты</p>
           </li>
