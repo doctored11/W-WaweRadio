@@ -6,7 +6,7 @@ const flags = document.querySelectorAll('.card__absolute-logo--flag');
 const peoplesCards = document.querySelectorAll('.card--about');
 
 
-
+//webdev
 
 const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
