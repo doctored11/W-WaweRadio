@@ -7,6 +7,7 @@ const peoplesCards = document.querySelectorAll('.card--about');
 
 
 
+
 const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 addBackImages(podcastCards);
@@ -19,11 +20,11 @@ function addBackImages(target) {
     target.forEach(function (card) {
 
         const backgroundId = card.getAttribute('data-backgroundId');
-        let imagePath = '../source/grafic/backs/' + backgroundId + '.png';
+        let imagePath = './source/grafic/backs/' + backgroundId + '.png';
         if (screenWidth < 450) {
             const backgroundMobileId = card.getAttribute('data-mobile-backgroundId');
             if (backgroundMobileId != null)
-                imagePath = '../source/grafic/backs/' + backgroundMobileId + '.png';
+                imagePath = './source/grafic/backs/' + backgroundMobileId + '.png';
         }
         card.style.backgroundImage = 'url(' + imagePath + ') ';
     });
